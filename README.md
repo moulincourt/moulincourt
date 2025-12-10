@@ -44,7 +44,7 @@ $Candidates.Add([Candidate]::new(@{
     AlmaMater = "Fontys University of Applied Sciences"
     DiscStyle = "C"
     MbtiType  = "INTJ"
-    Traits    = @("Informal", "Curious", "Enthusiastic", "Driven", "Committed")
+    Traits    = @("Informal", "Curious", "Enthusiastic", "Driven")
     Interests = @("Computers","History","Sci-fi","Board Games","LEGO")
     Socials   = @( 
         @{ Name = "LinkedIn"; Url = "https://www.linkedin.com/in/wouter-van-den-meulenhof" },
@@ -56,10 +56,11 @@ $Candidates.Add([Candidate]::new(@{
         CloudServices    = @("Microsoft Azure","Microsoft Entra","Microsoft365")
         Hypervisors      = @("Hyper-V","Proxmox")
         BackupAndRestore = @("Azure Recovery Services","Veeam Backup & Replication")
-        OperatingSystems = @("Microsoft Windows (Server)","MacOS","Debian Linux")
+        OperatingSystems = @("Microsoft Windows (Server)","MacOS","Debian","Ubuntu")
         Databases        = @("Microsoft SQL Server","Azure SQL","CosmosDB")
         InfraAsCode      = @("Terraform","Ansible")
-        Languages        = @("PowerShell","Python","T-SQL")
+        ProCode          = @("PowerShell","Python","T-SQL")
+        LowCode          = @("Azure Logic Apps","n8n")
         Tools            = @("Azure DevOps","GitHub","Docker","VSCode","Git")
     }
 
