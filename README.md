@@ -32,7 +32,7 @@ class Engineer {
 }
 
 $Team = @()
-$Team +=[Engineer]::new(@{
+$Team += [Engineer]::new(@{
     Name      = "Wouter van den Meulenhof"
     Gender    = "Male"
     Pronouns  = @("He","Him","His")
