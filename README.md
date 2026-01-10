@@ -58,14 +58,13 @@ $Team += [Engineer]::new(@{
         @{ Category = "Databases"; Items = @("Microsoft SQL Server","Azure SQL","CosmosDB") },
         @{ Category = "ProgrammingAndScripting"; Items = @("PowerShell","Python","T-SQL") },
         @{ Category = "InfrastructureAsCode"; Items = @("Terraform","Ansible") },
-        @{ Category = "WorkflowAutomation"; Items = @("Azure Automation","Azure Logic Apps","Power Automate") },
+        @{ Category = "AutomationServices"; Items = @("Azure Pipelines","Azure Automation","Azure Logic Apps","Azure Function Apps") },
         @{ Category = "Tooling"; Items = @("Azure DevOps","GitHub","Docker","VSCode","Git") }
     )
 
     IndustryCertifications = @(
         "Microsoft Certified: DevOps Engineer Expert",
         "Microsoft Certified: Azure Solutions Architect Expert",
-        "Microsoft Certified: Azure Virtual Desktop Specialty",
         "Microsoft Certified: Azure Cosmos DB Developer Specialty",
         "Microsoft Certified: Azure Database Administrator Associate",
         "Microsoft Certified: Azure Network Engineer Associate",
@@ -75,9 +74,7 @@ $Team += [Engineer]::new(@{
         "Microsoft Certified: Azure AI Fundamentals",
         "Microsoft Certified: Azure Data Fundamentals",
         "Microsoft Certified: Azure Fundamentals",
-        "HelloID Provisioning Associate"
         "HashiCorp Certified: Terraform Associate (expired: june 2025)",
-        "AWS Certified Cloud Practitioner (expired: june 2024)"
         "ITIL 4 Foundation"
     )
 
