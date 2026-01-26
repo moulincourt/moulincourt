@@ -1,4 +1,37 @@
 ```PowerShell
+class Engineer {
+    [string]      $Name
+    [string]      $Gender
+    [string[]]    $Pronouns
+    [string]      $Country
+    [string]      $Province
+    [string]      $City
+    [string]      $AlmaMater
+    [string]      $DiscStyle
+    [string]      $MbtiType
+    [string[]]    $Traits
+    [string[]]    $Interests
+    [hashtable[]] $Socials
+    [hashtable[]] $HasExperienceWith
+    [string[]]    $IndustryCertifications
+    [string[]]    $RolesInterestedIn
+
+    Engineer() { $this.InterviewEngineer(@{}) }
+    Engineer([hashtable]$Properties) { $this.InterviewEngineer($Properties) }
+
+    [void] InterviewEngineer([hashtable]$Properties) {
+        foreach ($Property in $Properties.Keys) {
+            $this.$Property = $Properties["$($Property)"]
+        }
+    }
+
+    [string] ToJson() {
+        $EngineerAsJson = ($this | ConvertTo-Json -Depth 8 -Compress)
+        return $EngineerAsJson
+    }
+}
+
+$Team = @()
 $Team += [Engineer]::new(@{
     Name      = "Wouter van den Meulenhof"
     Gender    = "Male"
