@@ -131,6 +131,7 @@ $Team += [Engineer]::new(@{
         "Microsoft Certified: Azure Fundamentals",
         "HashiCorp Certified: Terraform Associate (expired: June 2025)",
         "HelloID Provisioning Associate",
+        "HelloID Provisioning Fundamentals",
         "ITIL 4 Foundation"
     )
 
