@@ -1,3 +1,4 @@
+```powershell
 class Engineer {
     [string]    $Name
     [string]    $Gender
@@ -139,3 +140,4 @@ $Team += [Engineer]::new(@{
         "Technical Application Manager"
     )
 })
+```
