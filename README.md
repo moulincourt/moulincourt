@@ -46,8 +46,8 @@ $Team += [Engineer]::new(@{
     Interests = @("Computers","History","Sci-fi","Board Games","LEGO")
 
     Socials = @{
-        LinkedIn = "https://www.linkedin.com/in/wouter-van-den-meulenhof"
-        Credly   = "https://www.credly.com/users/wouter-van-den-meulenhof"
+        LinkedIn = "https://www.linkedin.com/in/moulincourt"
+        Credly   = "https://www.credly.com/users/moulincourt"
         GitHub   = "https://github.com/moulincourt"
     } 
 
