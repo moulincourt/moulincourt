@@ -1,20 +1,19 @@
-```PowerShell
 class Engineer {
-    [string]      $Name
-    [string]      $Gender
-    [string[]]    $Pronouns
-    [string]      $Country
-    [string]      $Province
-    [string]      $City
-    [string]      $AlmaMater
-    [string]      $DiscStyle
-    [string]      $MbtiType
-    [string[]]    $Traits
-    [string[]]    $Interests
-    [hashtable[]] $Socials
-    [hashtable[]] $HasExperienceWith
-    [string[]]    $IndustryCertifications
-    [string[]]    $RolesInterestedIn
+    [string]    $Name
+    [string]    $Gender
+    [string[]]  $Pronouns
+    [string]    $Country
+    [string]    $Province
+    [string]    $City
+    [string]    $AlmaMater
+    [string]    $DiscStyle
+    [string]    $MbtiType
+    [string[]]  $Traits
+    [string[]]  $Interests
+    [hashtable] $Socials
+    [hashtable] $HasExperienceWith
+    [string[]]  $Certifications
+    [string[]]  $RolesInterestedIn
 
     Engineer() { $this.InterviewEngineer(@{}) }
     Engineer([hashtable]$Properties) { $this.InterviewEngineer($Properties) }
@@ -43,28 +42,77 @@ $Team += [Engineer]::new(@{
 
     DiscStyle = "C"
     MbtiType  = "INTJ"
-    Traits    = @("Informal", "Curious", "Enthusiastic", "Driven")
+    Traits    = @("Informal", "Curious", "Enthusiastic")
     Interests = @("Computers","History","Sci-fi","Board Games","LEGO")
 
-    Socials   = @( 
-        @{ Name = "LinkedIn"; Url = "https://www.linkedin.com/in/wouter-van-den-meulenhof" },
-        @{ Name = "GitHub";   Url = "https://github.com/moulincourt" } 
-    )
+    Socials = @{
+        LinkedIn = "https://www.linkedin.com/in/wouter-van-den-meulenhof"
+        Credly   = "https://www.credly.com/users/wouter-van-den-meulenhof"
+        GitHub   = "https://github.com/moulincourt"
+    } 
 
-    HasExperienceWith = @(
-        @{ Category = "WaysOfWorking"; Items = @("Agile/Scrum","ITIL","GitOps","DevOps") }
-        @{ Category = "IdentityAndAccess"; Items = @("Microsoft Entra","Active Directory","HelloID") }
-        @{ Category = "CloudAndVirtualization"; Items = @("Microsoft Azure","Hyper-V","Proxmox") }
-        @{ Category = "BackupAndReplication"; Items = @("Azure Recovery Services","Veeam Backup & Replication") }
-        @{ Category = "OperatingSystems"; Items = @("Microsoft Windows Server","Debian","Ubuntu") }
-        @{ Category = "Databases"; Items = @("Microsoft SQL Server","Azure SQL","Azure Cosmos DB","Azure Tables") }
-        @{ Category = "ProgrammingAndScripting"; Items = @("PowerShell","Python","T-SQL","Bash") }
-        @{ Category = "InfrastructureAsCode"; Items = @("OpenTofu","Terraform","Ansible") }
-        @{ Category = "Automation"; Items = @("Azure Automation","Azure Logic Apps","Azure Functions","Azure Container Apps")}
-        @{ Category = "Tooling"; Items = @("Azure DevOps","GitHub","Docker","Git","VS Code") }
-    )
+    HasExperienceWith = @{
+        WaysOfWorking = @( 
+            "Agile/Scrum",
+            "ITIL",
+            "GitOps",
+            "DevOps"
+        )
 
-    IndustryCertifications = @(
+        IdentityAndAccess = @(
+            "Microsoft Entra",
+            "Active Directory Domain Services",
+            "KeyCloak",
+            "HelloID"
+        )
+
+        CloudProviders = @(
+            "Microsoft Azure"
+        )
+
+        Virtualization = @(
+            "Hyper-V",
+            "Proxmox",
+        )
+
+        DisasterRecovery = @(
+            "Veeam",
+            "Carbonite"
+        )
+
+        OperatingSystems = @(
+            "Windows Server",
+            "Debian",
+            "Ubuntu",
+            "Fedora"
+        )
+
+        Databases = @(
+            "Microsoft SQL Server",
+            "PostgreSQL"
+            "Azure SQL",
+            "Azure Cosmos DB",
+        )
+
+        Coding = @(
+            "OpenTofu",
+            "Ansible",
+            "PowerShell",
+            "Python"
+            "T-SQL",
+            "Bash"
+        )
+
+        Tools = @(
+            "Azure DevOps",
+            "GitHub",
+            "Docker",
+            "VS Code"
+            "Git",
+        )
+    }
+
+    Certifications = @(
         "Microsoft Certified: DevOps Engineer Expert",
         "Microsoft Certified: Azure Solutions Architect Expert",
         "Microsoft Certified: Azure for SAP Workloads Specialty",
@@ -80,8 +128,8 @@ $Team += [Engineer]::new(@{
         "Microsoft Certified: Azure AI Fundamentals",
         "Microsoft Certified: Azure Data Fundamentals",
         "Microsoft Certified: Azure Fundamentals",
-        "HelloID Provisioning Associate",
         "HashiCorp Certified: Terraform Associate (expired: June 2025)",
+        "HelloID Provisioning Associate",
         "ITIL 4 Foundation"
     )
 
@@ -91,5 +139,3 @@ $Team += [Engineer]::new(@{
         "Technical Application Manager"
     )
 })
-
-```
