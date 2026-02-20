@@ -40,7 +40,6 @@ $Team += [Engineer]::new(@{
     Province  = "North Brabant"
     City      = "Helmond"
     AlmaMater = "Fontys University of Applied Sciences"
-
     DiscStyle = "C"
     MbtiType  = "INTJ"
     Traits    = @("Informal", "Curious", "Enthusiastic")
@@ -53,64 +52,16 @@ $Team += [Engineer]::new(@{
     } 
 
     HasExperienceWith = @{
-        WaysOfWorking = @( 
-            "Agile/Scrum",
-            "ITIL",
-            "GitOps",
-            "DevOps"
-        )
-
-        IdentityAndAccess = @(
-            "Microsoft Entra",
-            "Active Directory Domain Services",
-            "KeyCloak",
-            "HelloID"
-        )
-
-        CloudProviders = @(
-            "Microsoft Azure"
-        )
-
-        Virtualization = @(
-            "Hyper-V",
-            "Proxmox",
-        )
-
-        DisasterRecovery = @(
-            "Veeam",
-            "Carbonite"
-        )
-
-        OperatingSystems = @(
-            "Windows Server",
-            "Debian",
-            "Ubuntu",
-            "Fedora"
-        )
-
-        Databases = @(
-            "Microsoft SQL Server",
-            "PostgreSQL"
-            "Azure SQL",
-            "Azure Cosmos DB",
-        )
-
-        Coding = @(
-            "OpenTofu",
-            "Ansible",
-            "PowerShell",
-            "Python"
-            "T-SQL",
-            "Bash"
-        )
-
-        Tools = @(
-            "Azure DevOps",
-            "GitHub",
-            "Docker",
-            "VS Code"
-            "Git",
-        )
+        WaysOfWorking    = @( "Agile/Scrum", "ITIL", "GitOps", "DevOps" )
+        Identity         = @( "Microsoft Entra", "Active Directory", "KeyCloak", "HelloID")
+        CloudProviders   = @( "Microsoft Azure" )
+        Virtualization   = @( "Hyper-V", "Proxmox" )
+        Backup           = @( "Azure Recovery Services", "Veeam Backup & Replication" )
+        OperatingSystems = @( "Windows Server", "Debian", "Ubuntu", "Fedora" )
+        Databases        = @( "Microsoft SQL Server", "PostgreSQL", "Azure SQL", "Azure Cosmos DB" )
+        Automation       = @( "Azure Automation", "Azure Logic/Function/Container Apps", "n8n" )
+        Coding           = @( "OpenTofu", "Ansible", "PowerShell", "Python" "T-SQL", "Bash" )
+        Tools            = @( "Azure DevOps", "GitHub", "Docker", "VS Code", "Git" )
     }
 
     Certifications = @(
@@ -136,8 +87,9 @@ $Team += [Engineer]::new(@{
     )
 
     RolesInterestedIn = @(
-        "Cloud Engineer",
         "Systems Engineer",
+        "Database Reliability Engineer",
+        "Cloud Engineer",
         "Technical Application Manager"
     )
 })
