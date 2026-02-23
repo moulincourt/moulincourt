@@ -26,7 +26,7 @@ class Engineer {
     }
 
     [string] ToJson() {
-        $EngineerAsJson = ($this | ConvertTo-Json -Depth 8 -Compress)
+        $EngineerAsJson = ( $this | ConvertTo-Json -Depth 8 -Compress )
         return $EngineerAsJson
     }
 }
