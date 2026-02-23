@@ -35,7 +35,7 @@ $Team = @()
 $Team += [Engineer]::new(@{
     Name      = "Wouter van den Meulenhof"
     Gender    = "Male"
-    Pronouns  = @("He","Him","His")
+    Pronouns  = @("He", "Him", "His")
     Country   = "The Netherlands"
     Province  = "North Brabant"
     City      = "Helmond"
@@ -43,7 +43,7 @@ $Team += [Engineer]::new(@{
     DiscStyle = "C"
     MbtiType  = "INTJ"
     Traits    = @("Informal", "Curious", "Enthusiastic")
-    Interests = @("Computers","History","Sci-fi","Board Games","LEGO")
+    Interests = @("Computers", "History", "Sci-fi", "Board Games", "LEGO")
 
     Socials = @{
         LinkedIn = "https://www.linkedin.com/in/moulincourt"
@@ -53,7 +53,7 @@ $Team += [Engineer]::new(@{
 
     HasExperienceWith = @{
         WaysOfWorking    = @( "Agile/Scrum", "ITIL", "GitOps", "DevOps" )
-        Identity         = @( "Microsoft Entra", "Active Directory", "KeyCloak", "HelloID")
+        Identity         = @( "Microsoft Entra", "Active Directory", "FreeIPA", "HelloID")
         CloudProviders   = @( "Microsoft Azure" )
         Virtualization   = @( "Hyper-V", "Proxmox" )
         Backup           = @( "Azure Recovery Services", "Veeam Backup & Replication" )
@@ -81,6 +81,7 @@ $Team += [Engineer]::new(@{
         "Microsoft Certified: Azure Data Fundamentals",
         "Microsoft Certified: Azure Fundamentals",
         "HashiCorp Certified: Terraform Associate (expired: June 2025)",
+        "AWS Certified: Cloud Practitioner (expired: June 2024)",
         "HelloID Provisioning Associate",
         "HelloID Provisioning Fundamentals",
         "ITIL 4 Foundation"
